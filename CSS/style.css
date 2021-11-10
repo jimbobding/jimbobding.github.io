@@ -469,9 +469,22 @@ a.cta:hover {
     background-color: black;
 }
 
+
 .about-container {
-    background-color: white;
+    min-height: 100vh;
+    position: relative;
+    background-color: white;;
 }
+
+@media only screen and (max-width: 360px) {
+    .about-container {
+        margin-bottom: 200px;
+        margin-top: 200px;
+        
+    }
+}
+
+
 
 .about-me-section p {
     font-size: 30px;
@@ -497,10 +510,7 @@ a.cta:hover {
     }
 }
 
-.about-container {
-    min-height: 100vh;
-    position: relative;
-}
+
 
 .about-p {
     position: absolute;

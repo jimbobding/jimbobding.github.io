@@ -24,24 +24,24 @@ h2 {
 }
 
 
-.navbar li  a {
-    
+.navbar li a {
+
     padding: 15px 20px;
     color: white;
 }
- 
-.navbar li  a:hover {
-    color:#00A0C6; 
+
+.navbar li a:hover {
+    color: #00A0C6;
 }
 
-.navbar-nav > li{
-    padding-left:30px;
-    padding-right:30px;
-  }
+.navbar-nav>li {
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
-  .navbar-nav > li:hover {
-      color: burlywood;
-  }
+.navbar-nav>li:hover {
+    color: burlywood;
+}
 
 
 /* -------------------------------- Hero Section */
@@ -472,14 +472,15 @@ a.cta:hover {
 .about-container {
     min-height: 100vh;
     position: relative;
-    background-color: white;;
+    background-color: white;
+    ;
 }
 
 @media only screen and (max-width: 360px) {
     .about-container {
         margin-bottom: 200px;
         margin-top: 200px;
-        
+
     }
 }
 
@@ -540,7 +541,14 @@ svg {
     position: absolute;
     top: 50%;
     left: 50%;
-    /* bring your own prefixes */
+
+    transform: translate(-50%, -50%);
+}
+
+.center-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -677,7 +685,7 @@ button[type="submit"]:hover {
 
 }
 
-ul li{
+ul li {
     display: inline-block;
     padding: 20px;
     justify-content: center;
@@ -688,7 +696,7 @@ ul li{
 }
 
 .social-link {
-    
+
     font-size: 35px;
 }
 
@@ -698,9 +706,9 @@ a {
 }
 
 a:hover {
-    color:#00A0C6; 
-    text-decoration:none; 
-    cursor:pointer;  
+    color: #00A0C6;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .header {

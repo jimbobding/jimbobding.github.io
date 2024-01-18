@@ -474,7 +474,19 @@ a.cta:hover {
     min-height: 100vh;
     position: relative;
     background-color: white;
-    ;
+    
+}
+
+.about-p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.5em;
+    max-height:60vh; 
+    overflow: auto; 
 }
 
 @media only screen and (max-width: 360px) {
@@ -514,7 +526,7 @@ a.cta:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    /* bring your own prefixes */
+
     transform: translate(-50%, -50%);
     width: 100%;
     padding: 10%;

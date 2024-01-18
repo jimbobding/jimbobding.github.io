@@ -14,6 +14,11 @@ h2 {
     font-size: 50px;
 }
 
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 /* -------------------------------- Navbar */
 .nav-custom {
     background-color: black;
@@ -452,14 +457,14 @@ a.cta:hover {
     min-height: 200px;
 }
 
-.centered-about {
+/* .centered-about {
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
-}
+} */
 
 .about-speel {
     margin: 10px;
@@ -469,12 +474,10 @@ a.cta:hover {
     background-color: black;
 }
 
-
 .about-container {
     min-height: 100vh;
     position: relative;
     background-color: white;
-    
 }
 
 .about-p {
@@ -489,11 +492,29 @@ a.cta:hover {
     overflow: auto; 
 }
 
+.about-button {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 10px;
+    background-color: #007bff;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+
+   
+}
+
+.about-button:hover {
+    background-color: #0056b3; 
+     color: rgb(27, 166, 247);
+}
+
+
 @media only screen and (max-width: 360px) {
     .about-container {
         margin-bottom: 200px;
         margin-top: 200px;
-
     }
 }
 
@@ -534,6 +555,34 @@ a.cta:hover {
     line-height: 1.5em;
 }
 
+.about-button {
+    text-align: center;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: "Montserrat";
+    color:black;
+    background-color: aliceblue;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease background-color;
+}
+
+.about-button[type="submit"]:hover {
+    background-color: rgb(214, 226, 236);
+     color: rgb(27, 166, 247);
+}
+
+
+.centered-about {
+    margin: 0;
+}
+
+
 /* -------------------------------- Tech used */
 
 .tech-header {
@@ -554,7 +603,6 @@ svg {
     position: absolute;
     top: 50%;
     left: 50%;
-
     transform: translate(-50%, -50%);
 }
 
@@ -637,7 +685,8 @@ button[type="submit"] {
     font-size: 24px;
     border-radius: 8px;
     font-family: "Montserrat";
-    color: rgb(27, 166, 247);
+    background-color: aliceblue;
+    color: black;
     text-align: center;
     cursor: pointer;
     margin-top: 10px;
@@ -645,7 +694,8 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: rgb(214, 226, 236);
+    background-color: #0056b3; 
+     color: rgb(27, 166, 247);
 }
 
 #status {
@@ -708,17 +758,14 @@ ul li {
     font-size: 25px;
 }
 
-.social-link {
+.social-link a  {
 
     font-size: 35px;
-}
-
-a {
     color: white;
     text-decoration: none;
 }
 
-a:hover {
+.social-link a:hover {
     color: #00A0C6;
     text-decoration: none;
     cursor: pointer;
